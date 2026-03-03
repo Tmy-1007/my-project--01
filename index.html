@@ -1,50 +1,132 @@
 <! DOCTYPE html>
 <html lang = "vi">
     <head>
-        <title> Dự án tiệm cà phê </title>
-        <meta charset = "utf-8">
-        <link href = "style1.css" rel = "stylesheet">
-    </head>
+        <meta charset="UTF-8"> 
+	<title>Công thức bánh ngọt</title> 
+
+	<style> 
+	   body { 
+		margin: 0; 
+		font-family: 'Times New Roman', sans-serif; 
+		background-color: #f8f9fa; 
+		}
+
+	   .banner { 
+		background-image: 									           url("https://i.pinimg.com/736x/3e/97/5a/3e975ab14f2a1d543e7829bfdd939ba6.jpg"); 
+		background-size: cover; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		text-align: center; 
+		padding: 30px; 
+		}
+
+	   .banner h1 { 
+		display: inline-block; 
+		padding: 30px 50px; 
+
+		/* Nền loang trắng + hồng */ 
+		background: radial-gradient( circle at 30% 30%, 
+					     rgba(255,255,255,0.9), 
+					     rgba(255,182,193,0.8), 
+					     rgba(255,255,255,0.7)); 
+		border-radius: 180px; 
+		color: #4A2C2A;		/* nâu chocolate đậm */ 
+		font-size: 42px; 
+		box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+		}
+
+	  .container { 
+		display: grid; 
+		grid-template-columns: 220px 1fr; 
+		} 
+
+	  .sidebar { 
+		list-style-type: none; 
+		background-color:#C9A7A5; 
+		border-right: 1px solid #ccc; 
+		padding: 20px; 
+		} 
+
+	  .sidebar h3 { 
+		margin-top: 0; 
+		}
+
+	  .sidebar a { 
+		display: block; 
+		text-decoration: none; 
+		color: #0645ad; 
+		margin-bottom: 10px; 
+		} 
+
+	  .sidebar a:hover { 
+		text-decoration: underline; 
+		} 
+
+	  .content { 
+		padding: 30px; 
+		background-color: white; 
+		}
+
+	  .content h2 { 
+		border-bottom: 1px solid #ccc; 
+		padding-bottom: 5px; 
+		} 
+	   </style> 
+
+	</head> 
+ 
     <body>
-        <h1> Các tiệm cà phê </h1>
-   
-        <b> 
-        <a href = " https://www.facebook.com/share/1MeG4YvznH/ "> Tiệm bánh Tom </a>
-        </b>
+      
+  	  <div class="banner"> 
+	      <h1>𓆩 CÔNG THỨC BÁNH NGỌT 𓆪 <br>●○●○</br> </h1> 
+          </div> 
 
-        <br> <br>
+          <div class="container"> 
 
-        <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfehbcQP9AW_Vx31UA-exkAkMGnfn5e8FQRg&s " 
-             style = " width:350px; height:250px; border:5px "
-             alt = " Tiệm bánh Tom ">
+          <div class="sidebar">
+	      <h3>Danh mục</h3> 
 
-        <b>
-        <p align = "center">
-        <a href = " https://www.facebook.com/share/1CFzRuupth/ "> Cà phê Yên Vũ </a>
-        </b>
+	      <ul> 
+	  <li>
+	      <a href="https://www.dienmayxanh.com/vao-bep/kham-pha-cac-loai-banh-sinh-nhat-de-lam-tai-nha-de-bua-tiec-23920?srsltid=AfmBOopp4OwS9e6MoPMW8T0oUer28BhIIWYMIKBL7DNVdJ4c_Dh4lR51" 		  	target="contentFrame">Giới thiệu các loại bánh</a>
+	  </li>
 
-        <br> <br>
+	  <li class="dropdown">
 
-        <img src = " https://inhat.vn/wp-content/uploads/2022/06/quan-cafe-dep-o-tra-vinh-10.jpg " 
-             style = " width:250px; height:350px; border:5px "
-             alt = " Cà phê Yên Vũ ">
-        </p>    
-        
-        <b>
-        <p align = "right">
-        <a href = " https://www.facebook.com/share/17qxSWry8L/ "> Túi Nâu Coffee & Tea </a>
-        </b>
+	  	  <a href="#" onclick="return false;">Công thức</a> 
 
-        <br> <br>
+	      <ul id="submenu" class="submenu"> 
 
-        <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFuxKVaJdKyz7d83l20WZX4N6OXdVbVfGBA&s " 
-             style = " width:350px; height:200px; border:5px "
-             alt = " Túi Nâu Coffee & Tea ">
-        </p>
+	  <li>
+	  <a href="http://www.savourydays.com/gateau-co-ban-bat-bai-no-fail-sponge-cake/" 			target="contentFrame">Bánh bông lan</a>
+  	  </li> 
 
-        <p align = "center" > THANKS FOR WATCHING!</p>
-        <br>
+	  <li>
+	  <a href="http://www.savourydays.com/chocolate-coffee-gateau-flan-caramel/" 				target="contentFrame">Bánh Flan Gato</a>
+	  </li> 
 
+	  <li>
+	  <a href="https://saigontourist.edu.vn/cach-lam-banh-mousse-mat-lanh-voi-cong-thuc-don-gian-tai-nha.html" 			
+		target="contentFrame">Bánh Mousse</a>
+	  </li> 
+
+	  <li>
+	 <a href="https://www.dienmayxanh.com/vao-bep/cach-lam-banh-tiramisu-don-gian-thom-beo-ngon-kho-cuong-lai-09630?srsltid=AfmBOopcSLaVf5yPeeZq-H-ZUkik9QnpPiNVDadmbrAjmQ-93QMJAGK4" 				target="contentFrame">Bánh Tiramisu</a>
+	  </li> 
+
+	      </ul> 
+
+	  </li> 
+	
+	      </ul> 
+
+	  </div>
+
+	  <div class="content" id="contentArea"> 
+	<iframe name="contentFrame" width="100%" height="500px"></iframe>
+	  </div> 
+
+	</div>
     </body>
     </html>   
 
